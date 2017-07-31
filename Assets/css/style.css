@@ -361,13 +361,106 @@ footer {
 
 }
 
+}
 
+/*Media Query up to 640px*/
+@media screen and (max-width: 640px) {
+  .wrapper {
+    width: 100%;
+  }
 
+  header,footer {
+  	width: 100%;
+  }
 
+/*can't figure out why there is still a left margin next 
+to the header! I'm able to remove the space when I inspect 
+but can't figure out how to do it here.*/
+  header {
+  	position: static;
+  	margin-left: none !important;
+  	padding-left: none !important;
+  }
+  main {
+  	width: 550px;
+  	margin-left: 15px;
+  	padding: 15px;
+  }
 
+  aside {
+  	width: 540px;
+  	margin-left: 15px;
+  	margin-top: 15px;
+  	  }
 
+  #name {
+  	text-align: center;
+  	width: 100%;
+  	margin: none !important;
+  }
+
+  #biopic {
+  	width: 520px;
+  }
+
+  #navbar {
+  	width: 100%;
+  	text-align: center;
+  	margin-bottom: 20px;
+  }
+
+  #connectwithme {
+  	text-align: left;
+  }
+
+  #container {
+  	border-top: 1px solid #dddddd;
+  }
+
+  #hangman {
+	width: 400px;
+	padding-left: 150px;
+}
+
+	#hangmantext {
+		margin-left: 145px;
+	}
+
+ #rpggame {
+ 	width: 400px;
+ 	float: left;
+ 	padding-left: 150px;
+  }
+  	#rpggametext {
+  		margin-left: 150px;
+  	}
+
+  #trivia {
+  	width: 400px;
+  	padding-left: 150px;
+  }
+  	#triviatext {
+  		margin-left: 145px;
+  	}
+
+ #infowidget {
+ 	width: 400px;
+ 	float: left;
+ 	padding-left: 150px;
+
+ }
+ 	#infowidgettext {
+ 		margin-left: 150px;
+ 	}
+
+ #roshambo {
+ 	width: 400px;
+ 	margin-left: 145px;
+ }
 
 
 
 
 }
+
+
